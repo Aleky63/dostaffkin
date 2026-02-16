@@ -106,8 +106,8 @@
             <div class="main-price-value" id="totalValue">{{ calculationResult() ? calculationResult().total : '—' }}</div>
           </div>
         </div>
-        <div class="main-order-box"    [formGroup]="orderForm" [style.display]="orderId() ? 'none' : null">
-          <div class="main-order-form" id="orderForm">
+        <div class="main-order-box" >
+          <div class="main-order-form" id="orderForm" [formGroup]="orderForm" [style.display]="orderId() ? 'none' : null">
             <div class="main-order-title">Оформление доставки</div>
             <div class="main-block-info-row">
               <div class="main-block-title">Контакты</div>
@@ -152,7 +152,7 @@
             <div class="main-success-icon">✓</div>
             <div class="main-success-title">Заявка отправлена!</div>
             <div class="main-success-title">
-              Номер отправления – <span id="orderId"> {{orderId()}}</span>
+              Номер отправления – <span id="orderId">{{orderId()}}</span>
             </div>
             <div class="main-success-subtitle">Мы скоро свяжемся с вами</div>
           </div>
