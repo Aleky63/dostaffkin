@@ -70,6 +70,7 @@ body {
 .button.button-white:hover {
   background: rgb(241 241 241);
 }
+
 .main-field {
   display: flex;
   align-items: center;
@@ -140,4 +141,17 @@ textarea::placeholder {
   border-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0 4px rgba(255, 204, 0, 0.35);
   background: rgba(255, 255, 255, 0.75);
+}
+
+.main-field:has(.ng-invalid.ng-touched) {
+  border-color: red;
+}
+
+
+.input-error {
+  margin-top: 1px;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 10px;
+  color: red;
 }
