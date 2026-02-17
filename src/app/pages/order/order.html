@@ -3,6 +3,9 @@
 <app-header />
 <aside class="main" id="sidebar">
   <div class="main-header">
+    <div class="sidebar-loader" [class.is-visible]="isLoading()">
+      <div class="loader-circle" aria-hidden="true"></div>
+    </div>
     <div class="main-title">Оформление доставки</div>
     <div class="main-text">Выберите параметры для расчета отправления</div>
   </div>

@@ -26,6 +26,7 @@ public readonly sizes = DELIVERY_SIZES;
 
     public orderId: any = signal(null);
     public calculationResult: any = signal(null);
+    public isLoading: any = signal(false);
     
     constructor(private formBuilder: FormBuilder, private deliveryApi: DeliveryApi) {
         this.routeForm = this.formBuilder.group({
@@ -69,6 +70,8 @@ public calculate() {
         if (!this.map || this.routeForm.invalid) {
             return;
         }
+
+        this.isLoading.set(true);
 
         const {from, to, size, speed} = this.routeForm.getRawValue();
 
@@ -114,6 +117,7 @@ public calculate() {
                     total,
                     speed
                 });
+                this.isLoading.set(false);
             } catch (err) {
                 this.failedCalculation();
             }
@@ -123,6 +127,7 @@ public calculate() {
     }
 private failedCalculation() {
     this.calculationResult.set(null);
+    this.isLoading.set(false);
     alert('Не удалось построить маршрут. Проверьте адреса и выбранные параметры.');
 }
 
