@@ -98,7 +98,7 @@
 
 @for (status of trackResult()?.statuses; track status.type + status.date) {
     <div class="track-status" [class]="status.type">
-        <img class="track-status-icon" [src]="'img/' + status.type + '.svg'"
+        <img class="track-status-icon" [src]="'/img/' + status.type + '.svg'"
              [alt]="status.label"/>
         <div class="track-status-text">
             <div class="track-status-text-state">{{ status.label }}</div>

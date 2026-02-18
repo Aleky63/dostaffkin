@@ -66,7 +66,7 @@
         @for (speed of speeds; track speed.value) {
         <div class="main-speed-card" [class.is-active]="routeForm.value.speed === speed.value"
           (click)="selectSpeed(speed.value)">
-          <img class="main-speed-media" src="img/{{speed.value}}.svg" alt="Speed" />
+          <img class="main-speed-media" src="/img/{{speed.value}}.svg" alt="Speed" />
           <div class="main-speed-description">{{ speed.label }}</div>
         </div>
         }
