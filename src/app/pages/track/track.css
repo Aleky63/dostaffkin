@@ -1,5 +1,6 @@
 .container {
-background: #f4f4f4 url("/img/track.png");
+  /* use relative path so it works with github pages base path */
+  background: #f4f4f4 url("img/track.png");
   background-size: cover;
   min-height: 100vh;
   padding: 170px 0 50px 0;
