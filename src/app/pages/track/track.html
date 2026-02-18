@@ -98,7 +98,7 @@
 
 @for (status of trackResult()?.statuses; track status.type + status.date) {
     <div class="track-status" [class]="status.type">
-        <!-- use relative path so base href is applied and avoid leading slash -->
+     
         <img class="track-status-icon" [src]="'img/' + status.type + '.svg'"
              [alt]="status.label"/>
         <div class="track-status-text">
