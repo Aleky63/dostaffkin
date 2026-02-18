@@ -6,20 +6,20 @@
 
 @font-face {
   font-family: "Roboto";
-  /* relative URL works with baseHref/deployUrl */
-  src: url("fonts/Roboto-Regular.ttf");
+  /* include base path for GitHub Pages deployment */
+  src: url("/dostaffkin/fonts/Roboto-Regular.ttf");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("fonts/Roboto-Bold.ttf");
+  src: url("/dostaffkin/fonts/Roboto-Bold.ttf");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("fonts/Roboto-Medium.ttf");
+  src: url("/dostaffkin/fonts/Roboto-Medium.ttf");
   font-weight: 500;
 }
 
@@ -140,7 +140,7 @@ textarea::placeholder {
 
 .main-field:focus-within {
   border-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 0 4px rgba(255, 204, 0, 0.35);
+  box-shadow: 0 0 0 4px rgba(250, 204, 0, 0.35);
   background: rgba(255, 255, 255, 0.75);
 }
 
