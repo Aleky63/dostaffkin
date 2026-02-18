@@ -6,19 +6,20 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto-Regular.ttf");
+  /* relative URL works with baseHref/deployUrl */
+  src: url("fonts/Roboto-Regular.ttf");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto-Bold.ttf");
+  src: url("fonts/Roboto-Bold.ttf");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto-Medium.ttf");
+  src: url("fonts/Roboto-Medium.ttf");
   font-weight: 500;
 }
 
