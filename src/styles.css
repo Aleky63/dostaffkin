@@ -75,11 +75,11 @@ body {
 .main-field {
   display: flex;
   align-items: center;
-  margin-top: 6px;
+  margin-top: 5px;
   gap: 10px;
   border: 1px solid #1111111a;
   background: #fafafa;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 10px 12px;
   position: relative;
   box-sizing: border-box;
@@ -94,7 +94,7 @@ body {
   width: 28px;
   height: 28px;
   border-radius: 10px;
-  background: rgba(17, 17, 17, 0.08);
+  background: rgba(17, 17, 17, 0.1);
   display: grid;
   place-items: center;
   flex: 0 0 auto;
@@ -113,7 +113,7 @@ body {
 
 .main-field:last-child .main-pin::before {
   background: green;
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 input,
